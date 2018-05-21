@@ -1,0 +1,28 @@
+<div class="container" style="-webkit-app-region: drag;margin:0 !important;padding: 0 !important">
+    <div class="row" id="pwd-container" style="margin:0 !important;padding: 0 !important">
+        <div class="col-md-2">
+            <section class="login-form">
+                <form method="post" role="login" style="-webkit-app-region: drag;">
+                    <a href="#" style="color:white;-webkit-app-region: no-drag;" ng-click="current_window.close()">
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </a>
+                    <a href="#" style="color:white;-webkit-app-region: no-drag;" ng-click="current_window.minimize()">
+                        <i class="glyphicon glyphicon-minus"></i>
+                    </a>
+                    <img src="../assets/brand.png" class="img-responsive" width="50%" alt="" />
+                    <input type="email" ng-model="loginData.email" required placeholder="Email" class="form-control input-lg" style="-webkit-app-region: no-drag;"
+                    />
+                    <input type="password" ng-model="loginData.password" required placeholder="Password" class="form-control input-lg" style="-webkit-app-region: no-drag;"
+                    />
+                    <div class="pwstrength_viewport_progress"></div>
+                    <button type="submit" name="go" class="btn btn-lg btn-success btn-block" style="color:white;-webkit-app-region: no-drag;"
+                        ng-click="login()">Sign in</button>
+                    <div>
+                        <a href="#!/register" style="color:white;-webkit-app-region: no-drag;">Create account</a> or
+                        <a href="#!/reset" style="color:white;-webkit-app-region: no-drag;">reset password</a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
